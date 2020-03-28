@@ -13,9 +13,9 @@
     </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container class="example-container">
-    <mat-sidenav #sidenav mode="side">
+    <mat-sidenav #sidenav mode="over">
         <mat-nav-list>
-            <a fxLayoutAlign="center" (click)="sidenav.toggle" mat-list-item><mat-icon class="red">clear</mat-icon>Close</a>
+            <a fxLayoutAlign="center" (click)="sidenav.toggle()" mat-list-item><mat-icon class="red">clear</mat-icon>Close</a>
             <div *ngFor="let item of menu"> 
                 <div><br></div>
                 <a href="{{item.path}}" mat-button>
@@ -24,7 +24,7 @@
             </div>
         </mat-nav-list>
     </mat-sidenav>
-    <mat-sidenav-content fxFlexFill mode="false">
+    <mat-sidenav-content fxFlexFill mode="true">
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>

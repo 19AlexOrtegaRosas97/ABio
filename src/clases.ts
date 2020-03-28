@@ -1,0 +1,1 @@
+const pathServer = "http://localhost:4200/#"

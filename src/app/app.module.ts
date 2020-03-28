@@ -1,16 +1,46 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MaterialModule } from 'src/app/material'
+import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserModule } from '@angular/platform-browser';
+import { HomeComponent } from './common/home/home.component'
+import { JobsComponent } from './common/jobs/jobs.component';
+import { SchoolComponent } from './common/school/school.component';
+import { ObjetiveComponent } from './common/objetive/objetive.component';
+import { LanguageComponent } from './common/language/language.component';
+import { InfoExtraComponent } from './common/info-extra/info-extra.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+const AR_RRoutes: Routes = [
+  {path: 'home', component: HomeComponent},
+  {path: 'info', component: InfoExtraComponent},
+  {path: 'jobs', component: JobsComponent},
+  {path: 'language', component: LanguageComponent},
+  {path: 'objetive', component: ObjetiveComponent},
+  {path: 'school', component: SchoolComponent},
+]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LanguageComponent,
+    SchoolComponent,
+    InfoExtraComponent,
+    ObjetiveComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FlexLayoutModule,
+    //RouterModule.forRoot(rutas,{ enableTracing: true }),
+    RouterModule.forRoot(AR_RRoutes, { useHash: true }),
   ],
   providers: [],
   bootstrap: [AppComponent]

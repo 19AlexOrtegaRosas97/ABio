@@ -1,1 +1,35 @@
-<p>language works!</p>
+<div class="container" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+    <div fxHide.lt-md fxFlexFill fxLayout.gt-sm="row" fxLayout.lt-md="column">
+        <div fxFlex="50" fxLayout="column" fxLayoutAlign="center center">
+            <h1>{{espanol}}</h1>
+            <mat-progress-spinner diameter="200" class="example-margin" color="primary" mode="determinate" value="100">
+            </mat-progress-spinner>
+            <h1>100%</h1>
+        </div>
+        <div fxFlex="50" fxLayout="column" fxLayoutAlign="center center">
+            <h1>40%</h1>
+            <mat-progress-spinner diameter="200" class="example-margin" color="warn" mode="determinate" value="40">
+            </mat-progress-spinner>
+            <h1>{{ingles}}</h1>
+        </div>
+    </div>
+    <div fxHide.gt-sm fxFlexFill fxLayout.gt-sm="row" fxLayout.lt-md="column">
+        <div fxFlex="35" fxLayout="row" fxLayoutAlign="space-around none" >
+            <h1>{{espanol}}</h1>
+            <div>
+                <mat-progress-spinner diameter="150" class="example-margin" color="primary" mode="determinate"
+                    value="100"></mat-progress-spinner>
+            </div>
+            <h1>100%</h1>
+        </div>
+        <div fxFlex="30"></div>
+        <div fxFlex="35" fxLayout="row" fxLayoutAlign="space-around none" >
+            <h1>40%</h1>
+            <div>
+                <mat-progress-spinner diameter="150" class="example-margin" color="warn" mode="determinate" value="40">
+                </mat-progress-spinner>
+            </div>
+            <h1>{{ingles}}</h1>
+        </div>
+    </div>
+</div>

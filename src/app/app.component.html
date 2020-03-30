@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="headBar">
     <mat-toolbar-row>
         <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-lg>
             <mat-icon>menu</mat-icon>
@@ -15,13 +15,27 @@
 <mat-sidenav-container class="example-container">
     <mat-sidenav #sidenav mode="over">
         <mat-nav-list>
-            <a fxLayoutAlign="center" (click)="sidenav.toggle()" mat-list-item><mat-icon class="red">clear</mat-icon>Close</a>
-            <div *ngFor="let item of menu"> 
+            <a fxLayoutAlign="center" (click)="sidenav.toggle()" mat-list-item>
+                <mat-icon class="red">clear</mat-icon>Close
+            </a>
+            <div *ngFor="let item of menu">
                 <div><br></div>
                 <a href="{{item.path}}" mat-button>
                     <mat-icon>{{item.icon}}</mat-icon>&nbsp;&nbsp;{{item.nombre}}
                 </a>
             </div>
+            <mat-button-toggle-group #group="matButtonToggleGroup" (click)="changeOpc(group.value)"
+                fxLayoutAlign="center">
+                <a href="/#/homeS" mat-button>
+                    <mat-button-toggle value="espanol" aria-label="Español">
+                        Español
+                    </mat-button-toggle>
+                </a>
+                <a mat-button href="/#/homeE">
+                    <mat-button-toggle value="ingles" aria-label="Ingles">
+                        Ingles</mat-button-toggle>
+                </a>
+            </mat-button-toggle-group>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill mode="true">

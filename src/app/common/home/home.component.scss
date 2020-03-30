@@ -1,7 +1,7 @@
 .avatarMD {
-    width: 500px;
-    height: 500px;
-    border-radius:250px;
+    width: 400px;
+    height: 400px;
+    border-radius:200px;
     filter: grayscale(100%);
     //border:10px solid #666;
   }
@@ -12,3 +12,39 @@
     filter: grayscale(100%);
     //border:10px solid #666;
   }
+.containerInfo{
+  padding-top: 30px;
+  width: 100%;
+}
+.containerInfoSM{
+  padding-top: 30px;
+  width: 90%;
+}
+.containerImage{
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.example-card {
+  max-width: 80%;
+  background-color: #6E6E6E;
+  color: black;
+}
+.container{
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+.mat-card-content{
+  font-size: 20px;
+}
+mat-card-actions img{
+  width: 30px;
+  height: 30px;
+  border-radius:15px;
+}
+.mail{
+  font-size: 30px;
+}
+.container button:hover,a:hover{
+    background-color: #848484;
+}

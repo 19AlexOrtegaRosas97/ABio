@@ -15,7 +15,8 @@ import { InfoExtraComponent } from './common/info-extra/info-extra.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const AR_RRoutes: Routes = [
-  {path: 'home', component: HomeComponent},
+  {path: 'homeS', component: HomeComponent},
+  {path: 'homeE', component: HomeComponent},
   {path: 'info', component: InfoExtraComponent},
   {path: 'jobs', component: JobsComponent},
   {path: 'language', component: LanguageComponent},

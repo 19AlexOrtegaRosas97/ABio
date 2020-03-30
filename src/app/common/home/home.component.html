@@ -1,8 +1,115 @@
-<div fxLayout="row" fxFlex="50%" fxFlex.gt-sm="25%" fxHide.md ></div>
-<div  fxLayout="row" fxLayoutAlign="center center" class="">
-    <img class="avatarSM" src="assets/images/alex.jpg" alt="alex" fxShow="true" fxHide.gt-xs>
+<div class="container" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+    <div class="containerImage" fxLayoutAlign="center center">
+        <img class="avatarSM" src="assets/images/AlexP.jpg" alt="alex" fxShow="true" fxHide.gt-xs>
+        <img class="avatarMD" src="assets/images/AlexP.jpg" alt="alex" fxShow="true" fxHide.lt-sm>
+    </div>
+    <div class="containerInfo" fxHide.lt-md>
+        <div class="info" fxFlex.gt-sm="100%" fxFlex.lt-md="50%">
+            <mat-card class="example-card" fxFlexFill>
+                <mat-card-title fxLayoutAlign="center">Alejandro Ortega Rosas</mat-card-title>
+                <div class="mat-card-content" fxLayout="column">
+                    <div>
+                        <p class="title">{{Profesion}}: </p>
+                        <div fxFlex="2"></div>
+                        <p>{{Ingenieroencomputacion}}. </p>
+                        <div fxFlex="1"></div>
+                        <mat-icon>computer</mat-icon>
+                    </div>
+                    <div>
+                        <p class="title">{{FechaNacimiento}}: </p>
+                        <div fxFlex="2"></div>
+                        <p>{{myBirth}}</p>
+                        <div fxFlex="5"></div>
+                        <p class="title">{{Edad}}: </p>
+                        <div fxFlex="2"></div>
+                        <p>{{age}} {{years}}</p>
+                        <div fxFlex="1"></div>
+                    </div>
+                    <div>
+                        <p class="title">{{Nacionalidad}}: </p>
+                        <div fxFlex="2"></div>
+                        <p>{{Mexicano}}</p>
+                    </div>
+                    <div>
+                        <p class="title">{{EstadoCivil}}: </p>
+                        <div fxFlex="2"></div>
+                        <p>{{Soltero}}</p>
+                    </div>
+                    <div>
+                        <p class="title">{{OcupacionActual}}: </p>
+                        <div fxFlex="2"></div>
+                        <p>{{Becario}}</p>
+                    </div>
+                </div>
+                <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+                    <a mat-button href="https://www.linkedin.com/in/alejandro-ortega-rosas-23011997/"><img
+                            src="assets/images/Linkedin.png" alt="Linkedin"></a>
+                    <div fxFlex="1"></div>
+                    <a mat-button href="https://github.com/19AlexOrtegaRosas97"><img src="assets/images/github.png"
+                            alt="GitHub"></a>
+                    <div fxFlex="1"></div>
+                    <a href="mailto:ortega4414@gmail.com" mat-button>
+                        <mat-icon class="mail">mail</mat-icon>
+                    </a>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <div class="containerInfoSM" fxFlexAlign="center" fxHide.gt-sm>
+        <div fxFlex.gt-sm="100%">
+            <mat-card class="example-card" fxFlexFill>
+                <mat-card-title fxLayoutAlign="center">Alejandro Ortega Rosas</mat-card-title>
+                <div class="mat-card-content" fxLayout="column">
+                    <div>
+                        <p class="title">{{Profesion}}: </p>
+                        <div fxFlex="2"></div>
+                        <p>{{Ingenieroencomputacion}} </p>
+                        <div fxFlex="1"></div>
+                        <mat-icon>computer</mat-icon>
+                    </div>
+                    <div fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                        <div>
+                            <p class="title">{{FechaNacimiento}}: </p>
+                            <div fxFlex="2"></div>
+                            <p>{{myBirth}}</p>
+                            <div fxFlex="5"></div>
+                        </div>
+                        <div>
+                            <p class="title">{{Edad}}: </p>
+                            <div fxFlex="2"></div>
+                            <p>{{age}} {{years}}</p>
+                            <div fxFlex="1"></div>
+                        </div>
+    
+                    </div>
+                    <div>
+                        <p class="title">{{Nacionalidad}}: </p>
+                        <div fxFlex="2"></div>
+                        <p>{{Mexicano}}</p>
+                    </div>
+                    <div>
+                        <p class="title">{{EstadoCivil}}: </p>
+                        <div fxFlex="2"></div>
+                        <p>{{Soltero}}</p>
+                    </div>
+                    <div>
+                        <p class="title">{{OcupacionActual}}: </p>
+                        <div fxFlex="2"></div>
+                        <p>{{Becario}}</p>
+                    </div>
+                </div>
+                <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+                    <a mat-button href="https://www.linkedin.com/in/alejandro-ortega-rosas-23011997/"><img
+                            src="assets/images/Linkedin.png" alt="Linkedin"></a>
+                    <div fxFlex="1"></div>
+                    <a mat-button href="https://github.com/19AlexOrtegaRosas97"><img src="assets/images/github.png"
+                            alt="GitHub"></a>
+                    <div fxFlex="1"></div>
+                    <a href="mailto:ortega4414@gmail.com" mat-button>
+                        <mat-icon class="mail">mail</mat-icon>
+                    </a>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
 </div>
-<div>
-    <img class="avatarMD" src="assets/images/alex.jpg" alt="alex" fxShow="true" fxHide.lt-sm>
-</div>
-

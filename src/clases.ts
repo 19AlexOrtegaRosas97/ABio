@@ -24,8 +24,20 @@ export class DicctionaryList{
             {id:'Becario',spanish:'Becario en Continental',english:'Intern in Continental'},
             {id:'Espanol',spanish:'Español',english:'Spanish'},
             {id:'Ingles',spanish:'Ingles',english:'English'},
-
-          ];
+            {id:'Preparatoria',spanish:'Preparatoria',english:'High School'},
+            {id:'Universidad',spanish:'Universidad',english:'University'},
+            {id:'carrera',spanish:'Carrera',english:'Career'},
+            {id:'Objetivo',spanish:'Objetivo',english:'Objetive'},
+            {id:'ObjetivoText',
+            spanish:'Desarrollar conocimientos adquiridos en la universidad emplearlos en el área laboral y adquirir nuevos conocimientos sobre la práctica, ser un empleado útil para cualquier empresa que me da la oportunidad de desarrollar mis conocimientos adquiridas dentro de la ingenieria, y aprender nuevas cosas y tecnologias para mi desarrollo profesional. Ser un profesionista útil dentro de la empresa.',
+            english:'Develop knowledge acquired in the university to use them in the labor area and acquire new knowledge during the practice, and also to be a useful employee for any company that gives me the opportunity to develop my knowledge acquired within my engineering career and learn new things and technologies for my professional development. Be a useful professional within the company. '
+            },
+            {id:'os',spanish:'Sistemas Operativos',english:'Operating Systems'},
+            {id:'infoWindows',spanish:'Manejo de sistemas operativos Windows (todas las versiones)',english:'Management of Windows operating systems (all versions)'},
+            {id:'infoUbuntu',spanish:'Conocimientos Basicos',english:'Basic Knowledge'},
+            {id:'programacion',spanish:'Programación',english:'Programming'},
+            {id:'db',spanish:'Lenguaje de Base de Datos',english:'Database Language'},
+        ];
     }
 
     getWord(language,word){

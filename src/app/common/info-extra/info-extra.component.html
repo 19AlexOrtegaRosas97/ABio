@@ -1,1 +1,490 @@
-<p>info-extra works!</p>
+
+<div fxHide.lt-sm>
+    <mat-tab-group class="menu">
+        <mat-tab label="{{os}}">
+            <div style="padding-top: 5%;">
+                <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="50" fxLayout="column">
+                        <p fxLayoutAlign="center">Windows</p>
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/Windows.png" width="300" height="300">
+                        </div>
+                        <p fxLayoutAlign="center">
+                            {{infoWindows}}
+                        </p>
+                    </div>
+                    <div fxFlex="50">
+                        <p fxLayoutAlign="center">Ubuntu Linux</p>
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/ubuntu.png" width="300" height="300">
+                        </div>
+                        <p fxLayoutAlign="center">
+                            {{infoUbuntu}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="{{programacion}}">
+            <div class="programing" style="padding-top: 5%;">
+                <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="25" fxLayout="column">
+                        <div fxLayoutAlign="center" matTooltip="C#">
+                            <img src="assets/images/Csharp.png" width="300" height="300">
+                        </div>
+                    </div>
+                    <div fxFlex="25">
+                        <div fxLayoutAlign="center" matTooltip="C++" matTooltipPosition="above">
+                            <img src="assets/images/c++.png" width="300" height="300">
+                        </div>
+                    </div>
+                    <div fxFlex="25">
+                        <div fxLayoutAlign="center" matTooltip="TypeScript" matTooltipPosition="above">
+                            <img src="assets/images/ts.png" width="300" height="300">
+                        </div>
+                    </div>
+                    <div fxFlex="25">
+                        <div fxLayoutAlign="center" matTooltip="Python" matTooltipPosition="above">
+                            <img src="assets/images/Python.png" width="300" height="300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="programing2">
+                <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="50" fxLayout="column">
+                        <div fxLayoutAlign="center" matTooltip="Javascript">
+                            <img src="assets/images/jas.png" width="300" height="300">
+                        </div>
+                    </div>
+                    <div fxFlex="50">
+                        <div fxLayoutAlign="center" matTooltip="PHP" matTooltipPosition="above">
+                            <img src="assets/images/php.png" width="400" height="300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="{{db}}">
+            <div style="padding-bottom: 5%;" style="padding-top: 5%;">
+                <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="50" fxLayout="column">
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/mysql.png" width="400" height="300">
+                        </div>
+                    </div>
+                    <div fxFlex="50">
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/sql.png" width="500" height="300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Frameworks">
+            <div style="padding-bottom: 5%;">
+                <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="50" fxLayout="column">
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/angular.png" width="300" height="300" matTooltip="Angular">
+                        </div>
+                    </div>
+                    <div fxFlex="50">
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/nodejs.png" width="500" height="300">
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="30" fxLayout="column">
+                        <div fxLayoutAlign="center" matTooltip="Bootstrap">
+                            <img src="assets/images/bootstrap.png" width="300" height="300">
+                        </div>
+                    </div>
+                    <div fxFlex="30">
+                        <div fxLayoutAlign="center" matTooltip="Flutter">
+                            <img src="assets/images/flutter.png" width="300" height="300">
+                        </div>
+                    </div>
+                    <div fxFlex="30">
+                        <img src="assets/images/s.png" width="500" height="300">
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>
+
+<!--<div fxHide.lt-sm>
+    <div>
+        <div fxLayoutAlign="center">
+            <h1>{{os}}</h1>
+        </div>
+        <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="50" fxLayout="column">
+                <p fxLayoutAlign="center">Windows</p>
+                <div fxLayoutAlign="center">
+                    <img src="assets/images/Windows.png" width="300" height="300">
+                </div>
+                <p fxLayoutAlign="center">
+                    {{infoWindows}}
+                </p>
+            </div>
+            <div fxFlex="50">
+                <p fxLayoutAlign="center">Ubuntu Linux</p>
+                <div fxLayoutAlign="center">
+                    <img src="assets/images/ubuntu.png" width="300" height="300">
+                </div>
+                <p fxLayoutAlign="center">
+                    {{infoUbuntu}}
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="programing">
+        <div fxLayoutAlign="start">
+            <h1>{{programacion}}</h1>
+        </div>
+        <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="25" fxLayout="column">
+                <div fxLayoutAlign="center" matTooltip="C#">
+                    <img src="assets/images/Csharp.png" width="300" height="300">
+                </div>
+            </div>
+            <div fxFlex="25">
+                <div fxLayoutAlign="center" matTooltip="C++" matTooltipPosition="above">
+                    <img src="assets/images/c++.png" width="300" height="300">
+                </div>
+            </div>
+            <div fxFlex="25">
+                <div fxLayoutAlign="center" matTooltip="TypeScript" matTooltipPosition="above">
+                    <img src="assets/images/ts.png" width="300" height="300">
+                </div>
+            </div>
+            <div fxFlex="25">
+                <div fxLayoutAlign="center" matTooltip="Python" matTooltipPosition="above">
+                    <img src="assets/images/Python.png" width="300" height="300">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="programing2">
+        <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="50" fxLayout="column">
+                <div fxLayoutAlign="center" matTooltip="Javascript">
+                    <img src="assets/images/jas.png" width="300" height="300">
+                </div>
+            </div>
+            <div fxFlex="50">
+                <div fxLayoutAlign="center" matTooltip="PHP" matTooltipPosition="above">
+                    <img src="assets/images/php.png" width="400" height="300">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="padding-bottom: 5%;">
+        <div fxLayoutAlign="center">
+            <h1>{{db}}</h1>
+        </div>
+        <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="50" fxLayout="column">
+                <div fxLayoutAlign="center">
+                    <img src="assets/images/mysql.png" width="400" height="300">
+                </div>
+            </div>
+            <div fxFlex="50">
+                <div fxLayoutAlign="center">
+                    <img src="assets/images/sql.png" width="500" height="300">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="padding-bottom: 5%;">
+        <div fxLayoutAlign="center">
+            <h1>Frameworks</h1>
+        </div>
+        <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="50" fxLayout="column">
+                <div fxLayoutAlign="center" matTooltip="Angular">
+                    <img src="assets/images/angular.png" width="300" height="300">
+                </div>
+            </div>
+            <div fxFlex="50">
+                <div fxLayoutAlign="center">
+                    <img src="assets/images/nodejs.png" width="500" height="300">
+                </div>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign=" none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="30" fxLayout="column">
+                <div fxLayoutAlign="center" matTooltip="Bootstrap">
+                    <img src="assets/images/bootstrap.png" width="300" height="300">
+                </div>
+            </div>
+            <div fxFlex="30">
+                <div fxLayoutAlign="center" matTooltip="Flutter">
+                    <img src="assets/images/flutter.png" width="300" height="300">
+                </div>
+            </div>
+            <div fxFlex="30">
+                <img src="assets/images/s.png" width="500" height="300">
+            </div>
+        </div>
+    </div>
+    
+    <div style="padding-bottom: 5%;">
+    </div>
+</div>-->
+
+<!--<div fxHide.gt-sm style="padding-right: 5%; padding-left: 5%;">
+    <div>
+        <div fxLayoutAlign="center">
+            <h1>{{os}}</h1>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="45" fxLayout="column">
+                <p fxLayoutAlign="center">Windows</p>
+                <div fxLayoutAlign="center">
+                    <img src="assets/images/Windows.png" width="50%" height="50%">
+                </div>
+                <p fxLayoutAlign="center">
+                    {{infoWindows}}
+                </p>
+            </div>
+            <div fxFlex="10"></div>
+            <div fxFlex="45">
+                <p fxLayoutAlign="center">Ubuntu Linux</p>
+                <div fxLayoutAlign="center">
+                    <img src="assets/images/ubuntu.png" width="50%" height="50%">
+                </div>
+                <p fxLayoutAlign="center">
+                    {{infoUbuntu}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="programing">
+        <div fxLayoutAlign="start">
+            <h1>{{programacion}}</h1>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="20" fxLayout="column">
+                <div fxLayoutAlign="center" matTooltip="C#">
+                    <img src="assets/images/Csharp.png" width="50%" height="50%">
+                </div>
+            </div>
+            <div fxFlex="5"></div>
+            <div fxFlex="20">
+                <div fxLayoutAlign="center" matTooltip="C++" matTooltipPosition="above">
+                    <img src="assets/images/c++.png" width="50%" height="50%">
+                </div>
+            </div>
+            <div fxFlex="5"></div>
+            <div fxFlex="20">
+                <div fxLayoutAlign="center" matTooltip="TypeScript" matTooltipPosition="above">
+                    <img src="assets/images/ts.png" width="50%" height="50%">
+                </div>
+            </div>
+            <div fxFlex="5"></div>
+            <div fxFlex="20">
+                <div fxLayoutAlign="center" matTooltip="Python" matTooltipPosition="above">
+                    <img src="assets/images/Python.png" width="50%" height="50%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="programing2">
+        <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="45" fxLayout="column">
+                <div fxLayoutAlign="center" matTooltip="Javascript">
+                    <img src="assets/images/jas.png" width="50%" height="50%">
+                </div>
+            </div>
+            <div fxFlex="10"></div>
+            <div fxFlex="45">
+                <div fxLayoutAlign="center" matTooltip="PHP" matTooltipPosition="above">
+                    <img src="assets/images/php.png" width="60%" height="50%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-bottom: 5%;">
+        <div fxLayoutAlign="center">
+            <h1>{{db}}</h1>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="50" fxLayout="column">
+                <div fxLayoutAlign="center">
+                    <img src="assets/images/mysql.png" width="400" height="50%">
+                </div>
+            </div>
+            <div fxFlex="50">
+                <div fxLayoutAlign="center">
+                    <img src="assets/images/sql.png" width="500" height="50%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-bottom: 5%;">
+        <div fxLayoutAlign="center">
+            <h1>Frameworks</h1>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="50" fxLayout="column">
+                <div fxLayoutAlign="center" matTooltip="Angular">
+                    <img src="assets/images/angular.png" width="50%" height="50%">
+                </div>
+            </div>
+            <div fxFlex="50">
+                <div fxLayoutAlign="center">
+                    <img src="assets/images/nodejs.png" width="60%" height="50%">
+                </div>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+            <div fxFlex="30" fxLayout="column">
+                <div fxLayoutAlign="center" matTooltip="Bootstrap">
+                    <img src="assets/images/bootstrap.png" width="50%" height="50%">
+                </div>
+            </div>
+            <div fxFlex="30">
+                <div fxLayoutAlign="center" matTooltip="Flutter">
+                    <img src="assets/images/flutter.png" width="50%" height="50%">
+                </div>
+            </div>
+            <div fxFlex="30">
+                <img src="assets/images/s.png" width="90%" height="90%">
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-bottom: 5%;">
+    </div>
+</div>-->
+
+<div fxHide.gt-sm style="padding-right: 5%; padding-left: 5%;">
+    <mat-tab-group class="menu">
+        <mat-tab label="{{os}}">
+            <div>
+                <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="45" fxLayout="column">
+                        <p fxLayoutAlign="center">Windows</p>
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/Windows.png" width="50%" height="50%">
+                        </div>
+                        <p fxLayoutAlign="center">
+                            {{infoWindows}}
+                        </p>
+                    </div>
+                    <div fxFlex="10"></div>
+                    <div fxFlex="45">
+                        <p fxLayoutAlign="center">Ubuntu Linux</p>
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/ubuntu.png" width="50%" height="50%">
+                        </div>
+                        <p fxLayoutAlign="center">
+                            {{infoUbuntu}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="{{programacion}}">
+            <div class="programing">
+                <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="20" fxLayout="column">
+                        <div fxLayoutAlign="center" matTooltip="C#">
+                            <img src="assets/images/Csharp.png" width="50%" height="50%">
+                        </div>
+                    </div>
+                    <div fxFlex="5"></div>
+                    <div fxFlex="20">
+                        <div fxLayoutAlign="center" matTooltip="C++" matTooltipPosition="above">
+                            <img src="assets/images/c++.png" width="50%" height="50%">
+                        </div>
+                    </div>
+                    <div fxFlex="5"></div>
+                    <div fxFlex="20">
+                        <div fxLayoutAlign="center" matTooltip="TypeScript" matTooltipPosition="above">
+                            <img src="assets/images/ts.png" width="50%" height="50%">
+                        </div>
+                    </div>
+                    <div fxFlex="5"></div>
+                    <div fxFlex="20">
+                        <div fxLayoutAlign="center" matTooltip="Python" matTooltipPosition="above">
+                            <img src="assets/images/Python.png" width="50%" height="50%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="programing2">
+                <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="45" fxLayout="column">
+                        <div fxLayoutAlign="center" matTooltip="Javascript">
+                            <img src="assets/images/jas.png" width="50%" height="50%">
+                        </div>
+                    </div>
+                    <div fxFlex="10"></div>
+                    <div fxFlex="45">
+                        <div fxLayoutAlign="center" matTooltip="PHP" matTooltipPosition="above">
+                            <img src="assets/images/php.png" width="50%" height="40%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="{{db}}">
+            <div style="padding-bottom: 5%;">
+                <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="50" fxLayout="column">
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/mysql.png" width="100%" height="100%">
+                        </div>
+                    </div>
+                    <div fxFlex="50">
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/sql.png" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Frameworks">
+            <div style="padding-bottom: 5%;">
+                <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="50" fxLayout="column">
+                        <div fxLayoutAlign="center" matTooltip="Angular">
+                            <img src="assets/images/angular.png" width="50%" height="50%">
+                        </div>
+                    </div>
+                    <div fxFlex="50">
+                        <div fxLayoutAlign="center">
+                            <img src="assets/images/nodejs.png" width="60%" height="50%">
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between none" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+                    <div fxFlex="30" fxLayout="column">
+                        <div fxLayoutAlign="center" matTooltip="Bootstrap">
+                            <img src="assets/images/bootstrap.png" width="50%" height="50%">
+                        </div>
+                    </div>
+                    <div fxFlex="30">
+                        <div fxLayoutAlign="center" matTooltip="Flutter">
+                            <img src="assets/images/flutter.png" width="50%" height="50%">
+                        </div>
+                    </div>
+                    <div fxFlex="30">
+                        <img src="assets/images/s.png" width="90%" height="90%">
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

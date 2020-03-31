@@ -1,0 +1,31 @@
+.programing{
+    padding-bottom: 5%;
+}
+.programing2{
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.example-tooltip {
+    background-color: steelblue;
+    font-size: 15px;
+  }
+  .mat-tab-link {
+    color:white !important;
+}
+.mat-ink-bar {
+    background-color: white !important
+}
+.mat-tab-label {
+    min-width: 50px !important;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: 50px;
+}
+.mat-tab-label.mat-tab-label-active {
+    min-width: 50px !important;
+    padding: 5px;
+    background-color: transparent;
+    color: skyblue;
+    font-weight: 50px;
+}

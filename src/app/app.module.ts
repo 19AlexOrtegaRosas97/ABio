@@ -9,8 +9,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HomeComponent } from './common/home/home.component'
 import { JobsComponent } from './common/jobs/jobs.component';
 import { SchoolComponent } from './common/school/school.component';
-import { ObjetiveComponent } from './common/objetive/objetive.component';
 import { LanguageComponent } from './common/language/language.component';
+import { ObjetiveComponent } from './common/objetive/objetive.component';
+import { QualitiesComponent } from './common/qualities/qualities.component';
 import { InfoExtraComponent } from './common/info-extra/info-extra.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -22,6 +23,7 @@ const AR_RRoutes: Routes = [
   {path: 'language', component: LanguageComponent},
   {path: 'objetive', component: ObjetiveComponent},
   {path: 'school', component: SchoolComponent},
+  {path: 'qualities', component: QualitiesComponent},
 ]
 
 @NgModule({
@@ -32,7 +34,8 @@ const AR_RRoutes: Routes = [
     SchoolComponent,
     InfoExtraComponent,
     ObjetiveComponent,
-    JobsComponent
+    JobsComponent,
+    QualitiesComponent
   ],
   imports: [
     BrowserModule,

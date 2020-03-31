@@ -5,7 +5,7 @@
         </button>
         <span class="menu-spacer"></span>
         <span>Alejandro Ortega</span>
-        <!--<div fxShow="true" fxHide.lt-md *ngFor="let item of menu">
+        <!--<div fxShow="true" fxHide.lt-md *ngFor="let item of menuSelected">
             <a href="#" mat-button>
                 <mat-icon>{{item.icon}}</mat-icon>{{item.nombre}}
             </a>
@@ -18,7 +18,7 @@
             <a fxLayoutAlign="center" (click)="sidenav.toggle()" mat-list-item>
                 <mat-icon class="red">clear</mat-icon>Close
             </a>
-            <div *ngFor="let item of menu">
+            <div *ngFor="let item of menuSelected">
                 <div><br></div>
                 <a href="{{item.path}}" mat-button>
                     <mat-icon>{{item.icon}}</mat-icon>&nbsp;&nbsp;{{item.nombre}}
@@ -28,12 +28,12 @@
                 fxLayoutAlign="center">
                 <a href="/#/homeS" mat-button>
                     <mat-button-toggle value="espanol" aria-label="Español">
-                        Español
+                        {{espanol}}
                     </mat-button-toggle>
                 </a>
                 <a mat-button href="/#/homeE">
                     <mat-button-toggle value="ingles" aria-label="Ingles">
-                        Ingles</mat-button-toggle>
+                        {{ingles}}</mat-button-toggle>
                 </a>
             </mat-button-toggle-group>
         </mat-nav-list>

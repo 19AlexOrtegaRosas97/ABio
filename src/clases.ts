@@ -37,6 +37,17 @@ export class DicctionaryList{
             {id:'infoUbuntu',spanish:'Conocimientos Basicos',english:'Basic Knowledge'},
             {id:'programacion',spanish:'Programación',english:'Programming'},
             {id:'db',spanish:'Lenguaje de Base de Datos',english:'Database Language'},
+            {id:'fechas',spanish:'Fechas',english:'Dates'},
+            {id:'fechasConti',spanish:'Semptiembre 2019 - Actual',english:'September 2019 - Current'},
+            {id:'posicion',spanish:'Posicion',english:'Position'},
+            {id:'posicionConti',spanish:'Practicante en desarrollo de aplicaciones web',english:'Intern applications Web developer'},
+            {id:'funciones',spanish:'Funciones',english:'Functions perfomed'},
+            {id:'funcionesConti',spanish:'Crear apps web para facturacion electronica',english:'Create web app for electronic invoicing'},
+            {id:'jefe',spanish:'Jefe',english:'Direct Manager'},
+            {id:'mail',spanish:'Correo Electronico',english:'E-Mail'},
+            {id:'fechasMilenio',spanish:'Noviembre 2018 - Mayo 2019',english:'November 2018 - May 2019'},
+            {id:'posicionMilenio',spanish:'Practicante en desarrollo web',english:'Web Development internship'},
+            {id:'funcionesMilenio',spanish:'Desarrollo de Backend, y soporte de Api',english:'Web development Backend, support of Api'}, 
         ];
     }
 
